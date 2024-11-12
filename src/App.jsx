@@ -7,25 +7,25 @@ import Hero from "./Components/Hero"
 import Form from "./Components/Form"
 import About from "./Components/About"
 import Footer from "./Components/Footer"
+import AllComp from "./Components/AllComp"
 
 function App() {
 
   return (
-    <div className="bg-blue-600 text-white text-2xl md:text-3xl">
-    <Navbar />
+    <div className="bg-gray-700 text-white text-2xl">
     
     <BrowserRouter>
-    
+    <Navbar />
     <Routes>
-    <Route path="/" element={<Home/>}/>
+    <Route path="/" element={<AllComp/>}/>
+    <Route path="/home" element={<Home/>}/>
     <Route path="/hero" element={<Hero/>}/>
     <Route path="/form" element={<Form/>}/>
     <Route path="/about" element={<About/>}/>
-    
+    <Route path="/footer" element={<Footer/>}/>
     </Routes>
     </BrowserRouter>
     
-    <Footer />
     </div>
   )
 }
