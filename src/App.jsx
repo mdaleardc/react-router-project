@@ -22,8 +22,8 @@ function App() {
     <Route path="/hero" element={<Hero/>}/>
     <Route path="/form" element={<Form/>}/>
     <Route path="/about" element={<About/>}/>
-    <Route path="/footer" element={<Footer/>}/>
     </Routes>
+    <Footer/>
     </BrowserRouter>
     
     </div>

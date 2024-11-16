@@ -7,7 +7,7 @@ const Navbar = () => {
   
   return (
     <div className="w-[100%] h-[60px] bg-[black] text-[#fffffe] fixed top-0 left-0 py-[5px]">
-    <div className="grid grid-cols-6 gap-x-[4px] h-full w-full justify-center content-center">
+    <div className="grid grid-cols-5 gap-x-[4px] h-full w-full justify-center content-center">
     <NavLink to="/">
     <button className="rounded bg-blue-600 w-full">Logo</button>
     </NavLink>
@@ -22,9 +22,6 @@ const Navbar = () => {
     </NavLink>
     <NavLink to="/about">
     <button className="rounded bg-blue-600 w-full">About</button>
-    </NavLink>
-    <NavLink to="/footer">
-    <button className="rounded bg-blue-600 w-full">Footer</button>
     </NavLink>
     </div>
     </div>
